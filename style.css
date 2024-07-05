@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+	background-color: #e4e9fd;
+	padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+	max-width: 1000px;
+    padding: 0 2%;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+.menu{
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+.menu > .logo{
+	position: absolute;
+    left: 22.7%;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a{
+	padding: 0 30px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+.bg{
+	margin-top: 200px;
+	width: 100%;
+}
+
+.bg-text{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-text h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.bg-text p{
+    color: gray;
+    font-size: 18px;
+    text-align: right;
+}
+
+.seta{
+	display: block;
+	margin-top: 180px;
+    color: black;
+    font-size: 35px;
+}
+
+.chamada1{
+	margin-top: 120px;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.wrapper img{
+    border-radius: 20px;
+    margin-top: 50px;
+    height: 300px;
+    width: 450px;
+    -webkit-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.59);
+    -moz-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.59);
+    box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.59);
+}
+
+.single{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 15px 100px 25px;
+    height: 400px;
+}
+
+.single p{
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.single h2{
+    font-size: 16px;
+    font-weight: 300;
+    color: gray;
+}
+
+.single .link{
+    position: relative;
+    top: 90px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+}
+
+.spam{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    margin: 60px 0 120px 0;
+}
+
+.r{
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.u{
+    margin: 60px 0 0 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.footer p{
+    position: absolute;
+    left: 22.7%;
+    color: #3c4e8d;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+}
+
+.footer a{
+    margin: 0 25px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Add this media query for screens with a maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+    /* Adjust styles for smaller screens here */
+.menu {
+    flex-direction: column;
+}
+.menu >.logo {
+    position: relative;
+    left: 0;
+}
+.bg-text {
+    flex-direction: column;
+}
+.wrapper {
+    flex-direction: column;
+}
+.single {
+    flex-direction: column;
+}
+.footer {
+    flex-direction: column;
+}
+}
+
+/* Add this media query for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+/* Adjust styles for even smaller screens here */
+.menu {
+    font-size: 12px;
+}
+.bg-text h1 {
+    font-size: 30px;
+}
+.wrapper img {
+    height: 200px;
+    width: 300px;
+}
+.single p {
+    font-size: 14px;
+}
+.footer p {
+    font-size: 12px;
+}
+}
+
+/* Add this media query for screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+/* Adjust styles for very small screens here */
+.menu {
+    font-size: 10px;
+}
+.bg-text h1 {
+    font-size: 20px;
+}
+.wrapper img {
+    height: 150px;
+    width: 200px;
+}
+.single p {
+    font-size: 12px;
+}
+.footer p {
+    font-size: 10px;
+}
+}
